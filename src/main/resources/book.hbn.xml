@@ -3,13 +3,13 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
+
 <hibernate-mapping>
-    <class name="models.Author" table="authors">
+    <class name="models.Book" table="books">
         <id name="id" type="int" column="id">
             <generator class="identity" />
         </id>
-        <property name="firstName" type="string" column="first_name"></property>
-        <property name="lastName" type="string" column="last_name"></property>
+        <property name="title" type="string" column="title"></property>
+        <property name="releaseYear" type="int" column="release_year"></property>
     </class>
-
 </hibernate-mapping>
